@@ -1,0 +1,47 @@
+<html >
+<head>
+<title>web ke empat</title>
+</head>
+<body>
+    <table border="1">
+        
+        <tr>
+            <th><h1><a href="Tugas.html">Home</a></h1></th>
+            <th><h1><a href="Gallery.html">Gallery</a></h1></th>
+            <th><h1><a href="about.html">about me</a></h1></th>
+            <th><h1><a href="Contact.html">Contact</a></h1></th>
+            
+        </tr>
+    </table>
+    <h1>Contact me</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td> : </td>
+                <td><input type="text" id="Data_nama" placeholder="Masukkan Nama"></td>
+            </tr>
+            <tr>
+                <td>gmail</td>
+                <td> : </td>
+                <td><input type="text" id="Data_gmail" placeholder="Masukkan gmail"></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td> : </td>
+                <td><input type="text" id="Data_Description" placeholder="Masukkan Description"></td>
+            </tr> 
+        </table>
+        <button onclick="HasilData()">Kirim</button>
+        
+    <script type="text/javascript">
+        function HasilData(){
+            var Nama  = document.getElementById('Data_nama').value
+            var gmail  = document.getElementById('Data_gmail').value
+            var Description  = document.getElementById("Data_Description").value
+
+            alert("Nama : "+ Nama + "\nGmail : "+ gmail + "Deskripsi : " + Description )
+        }
+    </script>
+</body>
+</html>
