@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="CSS/home.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="hobi.html">Hobi</a></li>
+                <li><a href="Contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<center>
+        <h1>Photo Gallery</h1>
+    </center>
+
+    <div class="gallery">
+        <img src="ft1..jpg" alt="Image 1">
+        <img src="ft2.jpeg" alt="Image 2">
+        <img src="ft3.jpeg" alt="Image 3">
+        <img src="ft4.jpeg" alt="Image 3">
+       
+    </div>
+
+</body>   
+</html>
