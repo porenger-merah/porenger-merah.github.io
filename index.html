@@ -1,54 +1,56 @@
-<html>
-    <title>latihan Tabel</title>
-    <body>
-        <div>
-            <table border="1"> 
-                <tr>
-          
-                    <th>no</th>
-                    <th>nama</th>
-                    <th>alamat</th>
-                    <th>usia</th>
-                    <th>hobi</th>
-                    
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>udin</td>
-                  <td>medan</td>
-                  <td>44</td>
-                  <td>basket</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>omeng</td>
-                  <td>jakarta</td>
-                  <td>36</td>
-                  <td>renang</td>
-        
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>ucok</td>
-                  <td>surabaya</td>
-                 <td>28</td>
-                 <td>bola</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>EKO </td>
-                  <td>medan</td>
-                  <td>55</td>
-                  <td>basket</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>ERNa</td>
-                  <td>bandung</td>
-                 <td>45</td>
-                 <td>batminton</td>
-                </tr>
-            </table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operator" id="clear">C</button></td>
+                        <td><button class="btn-operator" id="/">&divide;</button></td>
+                        <td><button class="btn-operator" id="*">&times;</button></td>
+                        <td><button class="btn-operator" id="backspace"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="7">7</button></td>
+                        <td><button class="btn-number" id="8">8</button></td>
+                        <td><button class="btn-number" id="9">9</button></td>
+                        <td><button class="btn-operator" id="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="4">4</button></td>
+                        <td><button class="btn-number" id="5">5</button></td>
+                        <td><button class="btn-number" id="6">6</button></td>
+                        <td><button class="btn-operator" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="1">1</button></td>
+                        <td><button class="btn-number" id="2">2</button></td>
+                        <td><button class="btn-number" id="3">3</button></td>
+                        <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" id="(">(</button></td>
+                        <td><button class="btn-number" id="0">0</button></td>
+                        <td><button class="btn-operator" id=")">)</button></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
